@@ -33,6 +33,7 @@ current: [vim-plug](https://github.com/junegunn/vim-plug)
   - [ ] [nvim-ufo](https://github.com/kevinhwang91/nvim-ufo?tab=readme-ov-file)
 - [ ] Git integrations
   - [ ] [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
+  - [ ] [markdown-preview](https://github.com/iamcco/markdown-preview.nvim)
   - [ ] git diff & conflict resolution?
 - [ ] Formatting and linters
   - [ ] whitespace auto-trimming?
