@@ -23,9 +23,9 @@ current: [vim-plug](https://github.com/junegunn/vim-plug)
   - [x] [onedark](https://github.com/navarasu/onedark.nvim)
 - [ ] Syntax Highlighting & LSP 
   - [x] [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-  - [ ] [neovim-lsp](https://github.com/neovim/nvim-lspconfig)
-  - [ ] [angularls](https://www.andersevenrud.net/neovim.github.io/lsp/configurations/angularls/)
-  - [ ] [kotlin](https://www.andersevenrud.net/neovim.github.io/lsp/configurations/kotlin_language_server/)
+  - [x] [neovim-lsp](https://github.com/neovim/nvim-lspconfig)
+  - [x] [angularls](https://www.andersevenrud.net/neovim.github.io/lsp/configurations/angularls/)
+  - [x] [kotlin](https://www.andersevenrud.net/neovim.github.io/lsp/configurations/kotlin_language_server/)
   - [ ] [java](https://www.andersevenrud.net/neovim.github.io/lsp/configurations/java_language_server/)
 - [ ] Tabbed buffers
   - [ ] [bufferline](https://github.com/akinsho/bufferline.nvim)

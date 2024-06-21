@@ -1,3 +1,4 @@
+local vim = vim
 local keymap = vim.keymap.set
 
 vim.g.loaded_netrw = 1

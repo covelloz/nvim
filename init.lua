@@ -1,3 +1,4 @@
+local vim = vim
 local Plug = vim.fn['plug#']
 
 -- plugin dependencies
@@ -13,6 +14,9 @@ vim.call('plug#begin')
   Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate' })
   -- onedark theme
   Plug('navarasu/onedark.nvim')
+  -- nvim-lspconfig
+  Plug('neovim/nvim-lspconfig')
+  Plug('udalov/kotlin-vim')
 vim.call('plug#end')
 
 -- plugin setup
@@ -20,6 +24,7 @@ require('setup.nvim-tree')
 require('setup.nvim-telescope')
 require('setup.nvim-treesitter')
 require('setup.nvim-onedark')
+require('setup.nvim-lspconfig')
 
 -- options
 require('options.general')
