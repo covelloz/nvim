@@ -6,9 +6,9 @@ vim.g.loaded_netrwPlugin = 1
 -- enable 24-bit colour
 vim.opt.termguicolors = true
 
-require("nvim-tree").setup({
+require('nvim-tree').setup({
   sort = {
-    sorter = "case_sensitive",
+    sorter = 'case_sensitive',
   },
   view = {
     width = 40,
@@ -21,8 +21,8 @@ require("nvim-tree").setup({
   },
 })
 
-keymap("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", { desc = "nvimtree toggle window" })
-keymap("n", "<leader>tf", "<cmd>NvimTreeFindFile<CR>", { desc = "nvimtree go to file" })
-keymap("n", "<leader>tc", "<cmd>NvimTreeCollapse<CR>", { desc = "nvimtree collapse" })
--- keymap("n", "<leader>tg", "<cmd>NvimTreeFocus<CR>", { desc = "nvimtree toggle window" })
+keymap('n', '<C-n>', '<cmd>NvimTreeToggle<CR>', { desc = 'nvimtree toggle window' })
+keymap('n', '<leader>tf', '<cmd>NvimTreeFindFile<CR>', { desc = 'nvimtree go to file' })
+keymap('n', '<leader>tc', '<cmd>NvimTreeCollapse<CR>', { desc = 'nvimtree collapse' })
+-- keymap('n', '<leader>tg', '<cmd>NvimTreeFocus<CR>', { desc = 'nvimtree toggle window' })
 
