@@ -58,10 +58,6 @@ local lsp_servers = {
     name = 'angularls',
     config = { on_attach = on_attach }
   },
-  {
-    name = 'kotlin_language_server',
-    config = { on_attach = on_attach }
-  },
 }
 
 for _, server in ipairs(lsp_servers) do
