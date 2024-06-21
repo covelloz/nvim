@@ -37,4 +37,9 @@ current: [vim-plug](https://github.com/junegunn/vim-plug)
   - [ ] git diff & conflict resolution?
 - [ ] Formatting and linters
   - [ ] whitespace auto-trimming?
+- [ ] Debugging
+  - [ ] [nvim-dap](https://github.com/mfussenegger/nvim-dap)
+  - [ ] [nvim-dap-vscode-js](https://github.com/mxsdev/nvim-dap-vscode-js)
+  - [ ] [kotlin-debug-adapter](https://github.com/fwcd/kotlin-debug-adapter)
+  - [ ] [vscode-java-debug](https://github.com/Microsoft/vscode-java-debug)
 
