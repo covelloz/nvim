@@ -18,6 +18,10 @@ local lsp_servers = {
     config = default_config
   },
   {
+    name = 'volar',
+    config = default_config
+  },
+  {
     name = 'rust_analyzer',
     config = {
       on_attach = default_config['on_attach'],
