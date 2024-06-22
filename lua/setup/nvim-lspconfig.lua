@@ -1,7 +1,7 @@
 local vim = vim
 local nvim_lsp = require('lspconfig')
 
-local on_attach = function(_, bufnr)
+local default_attach = function(_, bufnr)
   local function buf_set_option(...)
     vim.api.nvim_buf_set_option(bufnr, ...)
   end
@@ -48,15 +48,19 @@ end
 local lsp_servers = {
   {
     name = 'lua_ls',
-    config = { on_attach = on_attach }
+    config = { on_attach = default_attach }
   },
   {
     name = 'tsserver',
-    config = { on_attach = on_attach }
+    config = { on_attach = default_attach }
   },
   {
     name = 'angularls',
-    config = { on_attach = on_attach }
+    config = { on_attach = default_attach }
+  },
+  {
+    name = 'rust_analyzer',
+    config = { on_attach = default_attach }
   },
 }
 

@@ -24,8 +24,9 @@ current: [vim-plug](https://github.com/junegunn/vim-plug)
 - [ ] Syntax Highlighting & LSP 
   - [x] [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
   - [x] [neovim-lsp](https://github.com/neovim/nvim-lspconfig)
-  - [x] [angularls](https://www.andersevenrud.net/neovim.github.io/lsp/configurations/angularls/)
-  - [ ] [java](https://www.andersevenrud.net/neovim.github.io/lsp/configurations/java_language_server/)
+  - [x] [angularls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#angularls)
+  - [x] [rust_analyzer](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#rust_analyzer)
+  - [ ] [java](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#java_language_server)
 - [ ] Tabbed buffers
   - [ ] [bufferline](https://github.com/akinsho/bufferline.nvim)
 - [ ] Code folding
