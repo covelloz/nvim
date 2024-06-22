@@ -14,7 +14,7 @@ current: [vim-plug](https://github.com/junegunn/vim-plug)
 - terminal tools
   - tar, curl, git (nvim-treesitter)
 
-## TODO
+## Plugins 
 - [x] Plugin management, configuration, and file organization
 - [x] File navigation & search
   - [x] [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
