@@ -14,6 +14,19 @@ current: [vim-plug](https://github.com/junegunn/vim-plug)
 - terminal tools
   - tar, curl, git (nvim-treesitter)
 
+## Language Server Requirements
+- lua-language-server
+  - [luals](https://luals.github.io/#neovim-install)
+- @angular/language-server
+  - `npm install -g @angular/language-server`
+- Typescript
+  - `npm install -g typescript-language-server typescript`
+- Vue
+  - `npm install -g @vue/language-server @vue/typescript-plugin vue-tsc`
+- Rust Analyzer
+  - Install [rustup](https://rustup.rs/)
+  - `rustup component add rust-analyzer`
+
 ## Plugins 
 - [x] Plugin management, configuration, and file organization
 - [x] File navigation & search
