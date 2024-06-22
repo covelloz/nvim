@@ -1,6 +1,6 @@
 # nvim
 
-This repository should be cloned into: `~/.config/nvim`
+This repository should be cloned to: `~/.config/nvim`
 
 ## Package Management
 
