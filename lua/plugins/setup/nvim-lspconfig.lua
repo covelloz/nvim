@@ -1,8 +1,8 @@
 local nvim_lsp = require('lspconfig')
 
 -- language servers
-local default_config = require('setup.lsp.default')
-local rust_config = require('setup.lsp.rust')
+local default_config = require('plugins.setup.lsp_configs.default')
+local rust_config = require('plugins.setup.lsp_configs.rust')
 
 local lsp_servers = {
   {
