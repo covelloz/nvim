@@ -17,6 +17,8 @@ vim.call('plug#begin')
   -- nvim-lspconfig
   Plug('neovim/nvim-lspconfig')
   Plug('udalov/kotlin-vim')
+  -- buffer tabs
+  Plug('akinsho/bufferline.nvim', { ['tag'] = 'v4.6.1' })
 vim.call('plug#end')
 
 -- plugin setup
@@ -25,6 +27,7 @@ require('setup.nvim-telescope')
 require('setup.nvim-treesitter')
 require('setup.nvim-onedark')
 require('setup.nvim-lspconfig')
+require('setup.bufferline')
 
 -- options
 require('options.general')

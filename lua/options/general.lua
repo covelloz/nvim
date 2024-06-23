@@ -1,7 +1,8 @@
-local vim = vim
+local opt = vim.opt
 
-vim.opt.number = true
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.expandtab = true
+opt.number = true
+opt.tabstop = 2
+opt.shiftwidth = 2
+opt.expandtab = true
+opt.termguicolors = true
 
