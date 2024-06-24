@@ -6,3 +6,9 @@ keymap('n', '<leader>fg', builtin.live_grep, { desc = 'find in files' })
 keymap('n', '<leader>fb', builtin.buffers, { desc = 'find in buffers' })
 keymap('n', '<leader>fh', builtin.help_tags, { desc = 'find tags' })
 
+require('telescope').setup {
+  defaults = {
+    path_display = { 'truncate' }
+  }
+}
+
