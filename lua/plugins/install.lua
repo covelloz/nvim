@@ -18,5 +18,8 @@ vim.call('plug#begin')
   Plug('udalov/kotlin-vim')
   -- buffer tabs
   Plug('akinsho/bufferline.nvim', { ['tag'] = 'v4.6.1' })
+  -- code folding
+  Plug('kevinhwang91/promise-async')
+  Plug('kevinhwang91/nvim-ufo')
 vim.call('plug#end')
 

@@ -43,8 +43,8 @@ current: [vim-plug](https://github.com/junegunn/vim-plug)
   - [ ] [java](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#java_language_server)
 - [x] Tabbed buffers
   - [x] [bufferline](https://github.com/akinsho/bufferline.nvim)
-- [ ] Code folding
-  - [ ] [nvim-ufo](https://github.com/kevinhwang91/nvim-ufo?tab=readme-ov-file)
+- [x] Code folding
+  - [x] [nvim-ufo](https://github.com/kevinhwang91/nvim-ufo?tab=readme-ov-file)
 - [ ] Git integrations
   - [ ] [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
   - [ ] [markdown-preview](https://github.com/iamcco/markdown-preview.nvim)
