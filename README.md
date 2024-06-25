@@ -45,6 +45,9 @@ current: [vim-plug](https://github.com/junegunn/vim-plug)
   - [x] [bufferline](https://github.com/akinsho/bufferline.nvim)
 - [x] Code folding
   - [x] [nvim-ufo](https://github.com/kevinhwang91/nvim-ufo?tab=readme-ov-file)
+- [x] UI Enhancements
+  - [x] [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
+  - [x] [statuscol](https://github.com/luukvbaal/statuscol.nvim)
 - [ ] Git integrations
   - [ ] [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
   - [ ] [markdown-preview](https://github.com/iamcco/markdown-preview.nvim)
