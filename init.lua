@@ -7,6 +7,8 @@ require('plugins.setup.nvim-onedark')
 require('plugins.setup.nvim-lspconfig')
 require('plugins.setup.bufferline')
 require('plugins.setup.nvim-ufo')
+require('plugins.setup.statuscol')
+require('plugins.setup.indent-blankline')
 
 -- options
 require('options.general')

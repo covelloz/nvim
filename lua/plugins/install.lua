@@ -21,5 +21,8 @@ vim.call('plug#begin')
   -- code folding
   Plug('kevinhwang91/promise-async')
   Plug('kevinhwang91/nvim-ufo')
+  -- ui
+  Plug('luukvbaal/statuscol.nvim')
+  Plug('lukas-reineke/indent-blankline.nvim')
 vim.call('plug#end')
 
