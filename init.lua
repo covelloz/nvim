@@ -16,5 +16,6 @@ require('options.general')
 -- keymaps
 require('keymaps.general')
 require('keymaps.windowing')
+require('keymaps.buffers')
 require('keymaps.folding')
 
