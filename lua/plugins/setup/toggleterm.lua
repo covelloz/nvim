@@ -1,5 +1,5 @@
 require("toggleterm").setup {
-  size = 20,
+  size = 10,
   hide_numbers = true,
   start_in_insert = false,
 }
