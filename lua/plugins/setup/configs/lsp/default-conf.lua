@@ -44,7 +44,10 @@ local default_attach = function(_, bufnr)
   vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
 end
 
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
 return {
-  on_attach = default_attach
+  on_attach = default_attach,
+  capabilities = capabilities
 }
 

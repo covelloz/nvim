@@ -37,6 +37,7 @@ current: [vim-plug](https://github.com/junegunn/vim-plug)
 - [ ] Syntax Highlighting & LSP 
   - [x] [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
   - [x] [neovim-lsp](https://github.com/neovim/nvim-lspconfig)
+  - [x] [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) (auto-complete)
   - [x] [angularls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#angularls)
   - [x] [volar](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#volar)
   - [x] [rust_analyzer](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#rust_analyzer)
