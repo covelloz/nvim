@@ -7,7 +7,7 @@ vim.call('plug#begin')
   Plug('nvim-tree/nvim-tree.lua')
   -- nvim-telescope 
   Plug('nvim-lua/plenary.nvim')
-  Plug('nvim-telescope/telescope.nvim', { ['tag'] = '0.1.6' })
+  Plug('nvim-telescope/telescope.nvim', { ['tag'] = '0.1.8' })
   Plug('nvim-telescope/telescope-fzf-native.nvim', { ['do'] = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' })
   -- nvim-treesitter
   Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate' })
