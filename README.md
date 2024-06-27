@@ -49,7 +49,7 @@ current: [vim-plug](https://github.com/junegunn/vim-plug)
   - [x] [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
   - [x] [statuscol](https://github.com/luukvbaal/statuscol.nvim)
 - [ ] Git integrations
-  - [ ] [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
+  - [x] [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
   - [ ] [markdown-preview](https://github.com/iamcco/markdown-preview.nvim)
   - [ ] git diff & conflict resolution?
 - [ ] Formatting and linters
