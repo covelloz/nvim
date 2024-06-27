@@ -9,6 +9,7 @@ require('plugins.setup.bufferline')
 require('plugins.setup.nvim-ufo')
 require('plugins.setup.statuscol')
 require('plugins.setup.indent-blankline')
+require('plugins.setup.gitsigns')
 
 -- options
 require('options.general')

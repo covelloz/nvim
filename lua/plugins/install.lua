@@ -24,5 +24,6 @@ vim.call('plug#begin')
   -- ui
   Plug('luukvbaal/statuscol.nvim')
   Plug('lukas-reineke/indent-blankline.nvim')
+  Plug('lewis6991/gitsigns.nvim')
 vim.call('plug#end')
 
