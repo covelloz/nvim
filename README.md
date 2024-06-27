@@ -48,6 +48,7 @@ current: [vim-plug](https://github.com/junegunn/vim-plug)
 - [x] UI Enhancements
   - [x] [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
   - [x] [statuscol](https://github.com/luukvbaal/statuscol.nvim)
+  - [x] [toggleterm](https://github.com/akinsho/toggleterm.nvim)
 - [ ] Git integrations
   - [x] [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
   - [ ] [markdown-preview](https://github.com/iamcco/markdown-preview.nvim)

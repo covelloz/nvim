@@ -10,6 +10,7 @@ require('plugins.setup.nvim-ufo')
 require('plugins.setup.statuscol')
 require('plugins.setup.indent-blankline')
 require('plugins.setup.gitsigns')
+require('plugins.setup.toggleterm')
 
 -- options
 require('options.general')

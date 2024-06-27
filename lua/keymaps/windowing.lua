@@ -8,3 +8,6 @@ keymap('n', '<C-k>', '<C-w>k', { noremap = true, silent = true, desc = 'switch w
 keymap('n', '<leader>sv', '<C-w>H', { noremap = true, silent = true, desc = 'switch to vertical split' })
 keymap('n', '<leader>sh', '<C-w>K', { noremap = true, silent = true, desc = 'switch to horizontal split' })
 
+keymap('n', '<leader>c', ':ToggleTerm <CR>', { noremap = true, silent = true, desc = 'open terminal'})
+keymap('t', '<ESC>', '<ESC><C-\\><C-n>', { noremap = true, silent = true, desc = 'escape terminal mode'})
+
