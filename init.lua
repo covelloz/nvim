@@ -12,6 +12,7 @@ require('plugins.setup.statuscol')
 require('plugins.setup.indent-blankline')
 require('plugins.setup.gitsigns')
 require('plugins.setup.toggleterm')
+require('plugins.setup.which-key')
 
 -- options
 require('options.general')

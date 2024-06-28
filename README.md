@@ -32,6 +32,7 @@ current: [vim-plug](https://github.com/junegunn/vim-plug)
 - [x] File navigation & search
   - [x] [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
   - [x] [nvim-telescope](https://github.com/nvim-telescope/telescope.nvim)
+  - [x] [which-key](https://github.com/folke/which-key.nvim)
 - [x] Theme
   - [x] [onedark](https://github.com/navarasu/onedark.nvim)
 - [ ] Syntax Highlighting & LSP 

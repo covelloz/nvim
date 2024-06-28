@@ -36,5 +36,7 @@ vim.call('plug#begin')
   -- gutter column 
   Plug('luukvbaal/statuscol.nvim')
   Plug('lewis6991/gitsigns.nvim')
+  -- keymap display
+  Plug('folke/which-key.nvim')
 vim.call('plug#end')
 
