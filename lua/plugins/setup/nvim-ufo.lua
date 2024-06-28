@@ -8,8 +8,8 @@ opt.foldenable = true
 opt.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 
 -- Using ufo provider need remap `zR` and `zM`. If Neovim is 0.6.1, remap yourself
-keymap('n', 'zR', require('ufo').openAllFolds)
-keymap('n', 'zM', require('ufo').closeAllFolds)
+keymap('n', 'zO', require('ufo').openAllFolds)
+keymap('n', 'zK', require('ufo').closeAllFolds)
 
 require('ufo').setup({
   provider_selector = function(bufnr, filetype, buftype)
