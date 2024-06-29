@@ -6,10 +6,11 @@ keymap('n', '<C-l>', '<C-w>l', { noremap = true, silent = true, desc = 'switch w
 keymap('n', '<C-j>', '<C-w>j', { noremap = true, silent = true, desc = 'switch window down' })
 keymap('n', '<C-k>', '<C-w>k', { noremap = true, silent = true, desc = 'switch window up' })
 
-keymap('n', '<leader>sv', '<C-w>H', { noremap = true, silent = true, desc = 'switch to vertical split' })
-keymap('n', '<leader>sh', '<C-w>K', { noremap = true, silent = true, desc = 'switch to horizontal split' })
+keymap('n', '<leader>sv', ':vsplit<CR>', { noremap = true, silent = true, desc = 'create vertical split' })
+keymap('n', '<leader>sh', ':split<CR>', { noremap = true, silent = true, desc = 'create horizonal split' })
+keymap('n', '<leader>sV', '<C-w>H', { noremap = true, silent = true, desc = 'switch to vertical split' })
+keymap('n', '<leader>sH', '<C-w>K', { noremap = true, silent = true, desc = 'switch to horizontal split' })
 
-keymap('n', '<leader>c', ':ToggleTerm <CR>', { noremap = true, silent = true, desc = 'open terminal'})
 keymap('t', '<ESC>', '<ESC><C-\\><C-n>', { noremap = true, silent = true, desc = 'escape terminal mode'})
 
 function ResizeWindowVerticalIncrease()

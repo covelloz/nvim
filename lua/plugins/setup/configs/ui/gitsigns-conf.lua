@@ -37,11 +37,11 @@ return {
     map('n', '<leader>hu', gitsigns.undo_stage_hunk, { desc = 'git undo stage hunk' })
     map('n', '<leader>hR', gitsigns.reset_buffer, { desc = 'git reset entire buffer' } )
     map('n', '<leader>hp', gitsigns.preview_hunk, { desc = 'git preview hunk' })
-    map('n', '<leader>hb', function() gitsigns.blame_line{full=true} end, { desc = 'git blame line' })
-    map('n', '<leader>tb', gitsigns.toggle_current_line_blame, { desc = 'git toggle blame line' })
+    map('n', '<leader>hB', function() gitsigns.blame_line{full=true} end, { desc = 'git blame line' })
+    map('n', '<leader>hb', gitsigns.toggle_current_line_blame, { desc = 'git toggle blame line' })
     map('n', '<leader>hd', gitsigns.diffthis, { desc = 'git diff' })
-    map('n', '<leader>hD', function() gitsigns.diffthis('~') end, { desc = 'git diff entire' })
-    map('n', '<leader>td', gitsigns.toggle_deleted, { desc = 'git toggle deleted' })
+    -- map('n', '<leader>hD', function() gitsigns.diffthis('~') end, { desc = 'git diff entire' })
+    map('n', '<leader>hD', gitsigns.toggle_deleted, { desc = 'git toggle deleted' })
 
     -- Text object
     map({'o', 'x'}, 'ih', ':<C-U>Gitsigns select_hunk<CR>', { desc = 'git select hunk' })
