@@ -6,7 +6,7 @@ opt.timeoutlen = 300
 
 local wk = require('which-key')
 
-keymap('n', '<leader>wk', ':WhichKey<CR>', { desc = 'Open WhichKey' })
+keymap('n', '<leader>wk', ':WhichKey<CR>', { desc = 'WhichKey open' })
 
 -- document custom mappings
 wk.setup({})

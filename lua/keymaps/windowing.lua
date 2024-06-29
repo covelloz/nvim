@@ -44,8 +44,8 @@ function ResizeWindowHorizontalDecrease()
   vim.cmd("resize -" .. count)
 end
 
-keymap('n', '<leader>rr', ':<C-u>lua ResizeWindowVerticalIncrease()<CR>', { noremap = true, silent = true })
-keymap('n', '<leader>rl', ':<C-u>lua ResizeWindowVerticalDecrease()<CR>', { noremap = true, silent = true })
-keymap('n', '<leader>ru', ':<C-u>lua ResizeWindowHorizontalIncrease()<CR>', { noremap = true, silent = true })
-keymap('n', '<leader>rd', ':<C-u>lua ResizeWindowHorizontalDecrease()<CR>', { noremap = true, silent = true })
+keymap('n', '<leader>rr', ':<C-u>lua ResizeWindowVerticalIncrease()<CR>', { noremap = true, silent = true, desc = 'quick resize vertical +' })
+keymap('n', '<leader>rl', ':<C-u>lua ResizeWindowVerticalDecrease()<CR>', { noremap = true, silent = true, desc = 'quick resize vertical -' })
+keymap('n', '<leader>ru', ':<C-u>lua ResizeWindowHorizontalIncrease()<CR>', { noremap = true, silent = true, desc = 'quick resize horizontal +'})
+keymap('n', '<leader>rd', ':<C-u>lua ResizeWindowHorizontalDecrease()<CR>', { noremap = true, silent = true, desc = 'quick resize horizontal -' })
 

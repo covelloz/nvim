@@ -29,21 +29,21 @@ return {
     end)
 
     -- Actions
-    map('n', '<leader>hs', gitsigns.stage_hunk)
-    map('n', '<leader>hr', gitsigns.reset_hunk)
-    map('v', '<leader>hs', function() gitsigns.stage_hunk {vim.fn.line('.'), vim.fn.line('v')} end)
-    map('v', '<leader>hr', function() gitsigns.reset_hunk {vim.fn.line('.'), vim.fn.line('v')} end)
-    map('n', '<leader>hS', gitsigns.stage_buffer)
-    map('n', '<leader>hu', gitsigns.undo_stage_hunk)
-    map('n', '<leader>hR', gitsigns.reset_buffer)
-    map('n', '<leader>hp', gitsigns.preview_hunk)
-    map('n', '<leader>hb', function() gitsigns.blame_line{full=true} end)
-    map('n', '<leader>tb', gitsigns.toggle_current_line_blame)
-    map('n', '<leader>hd', gitsigns.diffthis)
-    map('n', '<leader>hD', function() gitsigns.diffthis('~') end)
-    map('n', '<leader>td', gitsigns.toggle_deleted)
+    map('n', '<leader>hs', gitsigns.stage_hunk, { desc = 'git stage hunk '})
+    map('n', '<leader>hr', gitsigns.reset_hunk, { desc = 'git reset hunk' })
+    map('v', '<leader>hs', function() gitsigns.stage_hunk {vim.fn.line('.'), vim.fn.line('v')} end, { desc = 'git stage hunk' })
+    map('v', '<leader>hr', function() gitsigns.reset_hunk {vim.fn.line('.'), vim.fn.line('v')} end, { desc = 'git reset hunk' })
+    map('n', '<leader>hS', gitsigns.stage_buffer, { desc = 'git stage entire buffer' })
+    map('n', '<leader>hu', gitsigns.undo_stage_hunk, { desc = 'git undo stage hunk' })
+    map('n', '<leader>hR', gitsigns.reset_buffer, { desc = 'git reset entire buffer' } )
+    map('n', '<leader>hp', gitsigns.preview_hunk, { desc = 'git preview hunk' })
+    map('n', '<leader>hb', function() gitsigns.blame_line{full=true} end, { desc = 'git blame line' })
+    map('n', '<leader>tb', gitsigns.toggle_current_line_blame, { desc = 'git toggle blame line' })
+    map('n', '<leader>hd', gitsigns.diffthis, { desc = 'git diff' })
+    map('n', '<leader>hD', function() gitsigns.diffthis('~') end, { desc = 'git diff entire' })
+    map('n', '<leader>td', gitsigns.toggle_deleted, { desc = 'git toggle deleted' })
 
     -- Text object
-    map({'o', 'x'}, 'ih', ':<C-U>Gitsigns select_hunk<CR>')
+    map({'o', 'x'}, 'ih', ':<C-U>Gitsigns select_hunk<CR>', { desc = 'git select hunk' })
   end
 }
