@@ -1,3 +1,8 @@
+local vim = vim
+
+-- ignore vim builtin style-guide for rust
+vim.g.rust_recommended_style = 0
+
 return {
   ['rust-analyzer'] = {
     assist = {
