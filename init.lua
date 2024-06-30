@@ -16,7 +16,9 @@ require('plugins.setup.which-key')
 
 -- options
 require('options.general')
-require('options.autocmd')
+
+-- auto commands
+require('autocmds.refresh')
 
 -- keymaps
 require('keymaps.general')
