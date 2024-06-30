@@ -56,7 +56,7 @@ current: [vim-plug](https://github.com/junegunn/vim-plug)
   - [ ] [markdown-preview](https://github.com/iamcco/markdown-preview.nvim)
   - [ ] git diff & conflict resolution?
 - [ ] Formatting and linters
-  - [ ] whitespace auto-trimming?
+  - [ ] [conform.nvim](https://github.com/stevearc/conform.nvim)
 - [ ] Debugging
   - [ ] [nvim-dap](https://github.com/mfussenegger/nvim-dap)
   - [ ] [nvim-dap-vscode-js](https://github.com/mxsdev/nvim-dap-vscode-js)
