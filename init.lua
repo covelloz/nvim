@@ -19,6 +19,7 @@ require('options.general')
 
 -- auto commands
 require('autocmds.refresh')
+require('autocmds.autosave')
 
 -- keymaps
 require('keymaps.general')
