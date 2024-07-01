@@ -33,6 +33,8 @@ vim.call('plug#begin')
   Plug('kevinhwang91/promise-async')
   Plug('kevinhwang91/nvim-ufo')
   Plug('lukas-reineke/indent-blankline.nvim')
+  -- whitespace
+  Plug('johnfrankmorgan/whitespace.nvim')
   -- gutter column 
   Plug('luukvbaal/statuscol.nvim')
   Plug('lewis6991/gitsigns.nvim')

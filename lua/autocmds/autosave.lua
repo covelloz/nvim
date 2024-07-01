@@ -11,8 +11,11 @@ autocmd({'BufLeave', 'WinLeave'}, {
     local curr_file = vim.fn.expand('%:p')
     local bufname = vim.api.nvim_buf_get_name(0)
 
-    if curr_file ~= '' and not string.find(bufname, 'NvimTree') then
-      vim.cmd(':w') -- save the file 
+    if curr_file ~= '' and
+      not string.find(bufname, 'NvimTree') and
+      not string.find(bufname, 'term:')
+    then
+      vim.cmd(':w') -- save the file
     end
   end
 })

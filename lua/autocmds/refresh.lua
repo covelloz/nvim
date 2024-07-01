@@ -11,7 +11,10 @@ autocmd({'BufEnter', 'WinEnter'}, {
     local curr_file = vim.fn.expand('%:p')
     local bufname = vim.api.nvim_buf_get_name(0)
 
-    if curr_file ~= '' and not string.find(bufname, 'NvimTree') then
+    if curr_file ~= '' and
+      not string.find(bufname, 'NvimTree') and
+      not string.find(bufname, 'term:')
+    then
       vim.cmd(':e %') -- force reload the file
     end
   end

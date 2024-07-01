@@ -57,6 +57,7 @@ current: [vim-plug](https://github.com/junegunn/vim-plug)
   - [ ] git diff & conflict resolution?
 - [ ] Formatting and linters
   - [ ] [conform.nvim](https://github.com/stevearc/conform.nvim)
+  - [x] [whitespace](https://github.com/johnfrankmorgan/whitespace.nvim)
 - [ ] Debugging
   - [ ] [nvim-dap](https://github.com/mfussenegger/nvim-dap)
   - [ ] [nvim-dap-vscode-js](https://github.com/mxsdev/nvim-dap-vscode-js)
