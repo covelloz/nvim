@@ -1,7 +1,7 @@
 local keymap = vim.keymap.set
 
-keymap('n', '<Tab>', ':bn<CR>', { noremap = true, silent = true, desc = 'go to next buffer' })
-keymap('n', '<S-Tab>', ':bp<CR>', { noremap = true, silent = true, desc = 'go to previous buffer' })
+keymap('n', '<Tab>', ':BufferLineCycleNext<CR>', { noremap = true, silent = true, desc = 'go to next buffer' })
+keymap('n', '<S-Tab>', ':BufferLineCyclePrev<CR>', { noremap = true, silent = true, desc = 'go to previous buffer' })
 keymap('n', '<leader>bh', ':BufferLineMovePrev<CR>', { noremap = true, silent = true, desc = 'move current buffer left' })
 keymap('n', '<leader>bl', ':BufferLineMoveNext<CR>', { noremap = true, silent = true, desc = 'move current buffer right' })
 keymap('n', '<leader>bp', ':BufferLineTogglePin<CR>', { noremap = true, silent = true, desc = 'toggle buffer pin' })
