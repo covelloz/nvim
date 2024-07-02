@@ -35,6 +35,7 @@ return {
     map('v', '<leader>hr', function() gitsigns.reset_hunk {vim.fn.line('.'), vim.fn.line('v')} end, { desc = 'git reset hunk' })
     map('n', '<leader>hS', gitsigns.stage_buffer, { desc = 'git stage entire buffer' })
     map('n', '<leader>hu', gitsigns.undo_stage_hunk, { desc = 'git undo stage hunk' })
+    map('n', '<leader>hU', gitsigns.reset_buffer_index, { desc = 'git unstage all hunks for current buffer'})
     map('n', '<leader>hR', gitsigns.reset_buffer, { desc = 'git reset entire buffer' } )
     map('n', '<leader>hp', gitsigns.preview_hunk, { desc = 'git preview hunk' })
     map('n', '<leader>hB', function() gitsigns.blame_line{full=true} end, { desc = 'git blame line' })
