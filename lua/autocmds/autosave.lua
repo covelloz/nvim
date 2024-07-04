@@ -9,11 +9,10 @@ autocmd({'BufLeave', 'WinLeave'}, {
   pattern = '*',
   callback = function()
     local curr_file = vim.fn.expand('%:p')
-    local bufname = vim.api.nvim_buf_get_name(0)
+    local bufnr = vim.api.nvim_get_current_buf()
 
     if curr_file ~= '' and
-      not string.find(bufname, 'NvimTree') and
-      not string.find(bufname, 'term:')
+      vim.fn.getbufvar(bufnr, "&modifiable") == 1
     then
       vim.cmd(':w') -- save the file
     end
