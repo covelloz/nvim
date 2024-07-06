@@ -45,6 +45,7 @@ local default_attach = function(_, bufnr)
 end
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 return {
   on_attach = default_attach,

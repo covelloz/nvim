@@ -14,6 +14,14 @@ local lsp_servers = {
     config = default_config
   },
   {
+    name = 'html',
+    config = default_config
+  },
+  {
+    name = 'cssls',
+    config = default_config
+  },
+  {
     name = 'angularls',
     config = default_config
   },
