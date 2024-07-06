@@ -13,8 +13,9 @@ autocmd({'BufLeave', 'WinLeave'}, {
 
     if curr_file ~= '' and
       vim.fn.getbufvar(bufnr, "&modifiable") == 1 and
-      not curr_file:find("://", 1, true)
-    then
+      not curr_file:find("://", 1, true) and -- editable temp buffers
+      not curr_file:find("[Plugins]", 1, true) -- vim-plug
+   then
       vim.cmd(':w') -- save the file
     end
   end
