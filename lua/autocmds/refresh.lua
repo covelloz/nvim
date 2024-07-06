@@ -12,7 +12,8 @@ autocmd({'BufEnter', 'WinEnter'}, {
     local bufnr = vim.api.nvim_get_current_buf()
 
     if curr_file ~= '' and
-      vim.fn.getbufvar(bufnr, "&modifiable") == 1
+      vim.fn.getbufvar(bufnr, "&modifiable") == 1 and
+      not curr_file:find("://", 1, true)
     then
       vim.cmd(':w') -- save the file
     end
