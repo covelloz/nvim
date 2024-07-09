@@ -18,29 +18,29 @@ keymap('n', '<leader>bp', ':BufferLineTogglePin<CR>', { noremap = true, silent =
 
 keymap(
 	'n',
-	'<leader>bqq',
+	'<leader>bq',
 	':bd<CR>:bp<CR>',
-	{ noremap = true, silent = true, desc = 'close current buffer & go to previous' }
+	{ noremap = true, silent = true, desc = 'quick close current buffer & go to previous' }
 )
 keymap(
 	'n',
-	'<leader>bqr',
+	'<leader>bcr',
 	':BufferLineCloseRight<CR>',
 	{ noremap = true, silent = true, desc = 'close all buffers to the right' }
 )
 keymap(
 	'n',
-	'<leader>bql',
+	'<leader>bcl',
 	':BufferLineCloseLeft<CR>',
 	{ noremap = true, silent = true, desc = 'close all buffers to the left' }
 )
 keymap(
 	'n',
-	'<leader>bqo',
+	'<leader>bco',
 	':BufferLineCloseOthers<CR>',
 	{ noremap = true, silent = true, desc = 'close all except current buffer' }
 )
-keymap('n', '<leader>bQ', ':bufdo bdelete<CR>', { noremap = true, silent = true, desc = 'close all buffers' })
+keymap('n', '<leader>bQ', ':bufdo bdelete<CR>', { noremap = true, silent = true, desc = 'quick close all buffers' })
 
 require('bufferline').setup({
 	options = {
