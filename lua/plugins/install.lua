@@ -35,9 +35,10 @@ vim.call('plug#begin')
   Plug('lukas-reineke/indent-blankline.nvim')
   -- whitespace
   Plug('johnfrankmorgan/whitespace.nvim')
-  -- gutter column 
+  -- status 
   Plug('luukvbaal/statuscol.nvim')
   Plug('lewis6991/gitsigns.nvim')
+  Plug('nvim-lualine/lualine.nvim')
   -- keymap display
   Plug('folke/which-key.nvim')
 vim.call('plug#end')
