@@ -11,42 +11,61 @@ keymap('n', '<leader>sh', ':split<CR>', { noremap = true, silent = true, desc = 
 keymap('n', '<leader>sV', '<C-w>H', { noremap = true, silent = true, desc = 'switch to vertical split' })
 keymap('n', '<leader>sH', '<C-w>K', { noremap = true, silent = true, desc = 'switch to horizontal split' })
 
-keymap('t', '<ESC>', '<ESC><C-\\><C-n>', { noremap = true, silent = true, desc = 'escape terminal mode'})
+keymap('t', '<ESC>', '<ESC><C-\\><C-n>', { noremap = true, silent = true, desc = 'escape terminal mode' })
 
 function ResizeWindowVerticalIncrease()
-  local count = vim.v.count
-  if count == 0 then
-    count = 20
-  end
-  vim.cmd("vertical resize +" .. count)
+	local count = vim.v.count
+	if count == 0 then
+		count = 20
+	end
+	vim.cmd('vertical resize +' .. count)
 end
 
 function ResizeWindowVerticalDecrease()
-  local count = vim.v.count
-  if count == 0 then
-    count = 20
-  end
-  vim.cmd("vertical resize -" .. count)
+	local count = vim.v.count
+	if count == 0 then
+		count = 20
+	end
+	vim.cmd('vertical resize -' .. count)
 end
 
 function ResizeWindowHorizontalIncrease()
-  local count = vim.v.count
-  if count == 0 then
-    count = 20
-  end
-  vim.cmd("resize +" .. count)
+	local count = vim.v.count
+	if count == 0 then
+		count = 20
+	end
+	vim.cmd('resize +' .. count)
 end
 
 function ResizeWindowHorizontalDecrease()
-  local count = vim.v.count
-  if count == 0 then
-    count = 20
-  end
-  vim.cmd("resize -" .. count)
+	local count = vim.v.count
+	if count == 0 then
+		count = 20
+	end
+	vim.cmd('resize -' .. count)
 end
 
-keymap('n', '<leader>rr', ':<C-u>lua ResizeWindowVerticalIncrease()<CR>', { noremap = true, silent = true, desc = 'quick resize vertical +' })
-keymap('n', '<leader>rl', ':<C-u>lua ResizeWindowVerticalDecrease()<CR>', { noremap = true, silent = true, desc = 'quick resize vertical -' })
-keymap('n', '<leader>ru', ':<C-u>lua ResizeWindowHorizontalIncrease()<CR>', { noremap = true, silent = true, desc = 'quick resize horizontal +'})
-keymap('n', '<leader>rd', ':<C-u>lua ResizeWindowHorizontalDecrease()<CR>', { noremap = true, silent = true, desc = 'quick resize horizontal -' })
-
+keymap(
+	'n',
+	'<leader>rr',
+	':<C-u>lua ResizeWindowVerticalIncrease()<CR>',
+	{ noremap = true, silent = true, desc = 'quick resize vertical +' }
+)
+keymap(
+	'n',
+	'<leader>rl',
+	':<C-u>lua ResizeWindowVerticalDecrease()<CR>',
+	{ noremap = true, silent = true, desc = 'quick resize vertical -' }
+)
+keymap(
+	'n',
+	'<leader>ru',
+	':<C-u>lua ResizeWindowHorizontalIncrease()<CR>',
+	{ noremap = true, silent = true, desc = 'quick resize horizontal +' }
+)
+keymap(
+	'n',
+	'<leader>rd',
+	':<C-u>lua ResizeWindowHorizontalDecrease()<CR>',
+	{ noremap = true, silent = true, desc = 'quick resize horizontal -' }
+)

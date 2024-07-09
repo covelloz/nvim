@@ -27,6 +27,11 @@ current: [vim-plug](https://github.com/junegunn/vim-plug)
   - Install [rustup](https://rustup.rs/)
   - `rustup component add rust-analyzer`
 
+## Formatter and Linter Requirements
+- [stylua](https://github.com/JohnnyMorganz/StyLua)
+- [prettier](https://github.com/prettier/prettier)
+- [rustfmt](https://github.com/rust-lang/rustfmt)
+
 ## Plugins 
 - [x] Plugin management, configuration, and file organization
 - [x] File navigation & search
@@ -58,8 +63,8 @@ current: [vim-plug](https://github.com/junegunn/vim-plug)
   - [x] [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
   - [ ] [markdown-preview](https://github.com/iamcco/markdown-preview.nvim)
   - [ ] git diff & conflict resolution?
-- [ ] Formatting and linters
-  - [ ] [conform.nvim](https://github.com/stevearc/conform.nvim)
+- [x] Formatting and linters
+  - [x] [conform.nvim](https://github.com/stevearc/conform.nvim)
   - [x] [whitespace](https://github.com/johnfrankmorgan/whitespace.nvim)
 - [ ] Debugging
   - [ ] [nvim-dap](https://github.com/mfussenegger/nvim-dap)

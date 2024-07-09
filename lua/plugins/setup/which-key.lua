@@ -10,4 +10,3 @@ keymap('n', '<leader>wk', ':WhichKey<CR>', { desc = 'open whichkey' })
 
 -- document custom mappings
 wk.setup({})
-

@@ -1,6 +1,7 @@
 -- plugins
 require('plugins.install')
 require('plugins.setup.bufferline')
+require('plugins.setup.conform')
 require('plugins.setup.gitsigns')
 require('plugins.setup.indent-blankline')
 require('plugins.setup.nvim-cmp')
@@ -27,4 +28,3 @@ require('autocmds.refresh')
 require('keymaps.folding')
 require('keymaps.general')
 require('keymaps.windowing')
-
