@@ -3,6 +3,7 @@ local nvim_lsp = require('lspconfig')
 -- language servers
 local default_config = require('plugins.setup.configs.lsp.default-conf')
 local rust_config = require('plugins.setup.configs.lsp.rust-conf')
+require('plugins.setup.configs.lsp.eslint-conf')
 
 local lsp_servers = {
 	{
@@ -25,6 +26,10 @@ local lsp_servers = {
 		name = 'angularls',
 		config = default_config,
 	},
+  {
+    name = 'eslint',
+    config = default_config
+  },
 	{
 		name = 'volar',
 		config = default_config,

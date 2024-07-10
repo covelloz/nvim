@@ -23,6 +23,8 @@ current: [vim-plug](https://github.com/junegunn/vim-plug)
   - `npm install -g typescript-language-server typescript`
 - Vue
   - `npm install -g @vue/language-server @vue/typescript-plugin vue-tsc`
+- VSCode language servers (html, cssls, eslint, etc)
+  - `npm i -g vscode-langservers-extracted`
 - Rust Analyzer
   - Install [rustup](https://rustup.rs/)
   - `rustup component add rust-analyzer`
