@@ -3,15 +3,12 @@ local nvim_lsp = require('lspconfig')
 -- language servers
 local default_config = require('plugins.setup.configs.lsp.default-conf')
 local rust_config = require('plugins.setup.configs.lsp.rust-conf')
+local tsserver_config = require('plugins.setup.configs.lsp.tsserver-conf')
 require('plugins.setup.configs.lsp.eslint-conf')
 
 local lsp_servers = {
 	{
 		name = 'lua_ls',
-		config = default_config,
-	},
-	{
-		name = 'tsserver',
 		config = default_config,
 	},
 	{
@@ -21,6 +18,10 @@ local lsp_servers = {
 	{
 		name = 'cssls',
 		config = default_config,
+	},
+  {
+		name = 'tsserver',
+		config = tsserver_config,
 	},
 	{
 		name = 'angularls',
