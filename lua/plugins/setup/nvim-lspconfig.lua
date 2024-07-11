@@ -37,11 +37,8 @@ local lsp_servers = {
 	},
 	{
 		name = 'rust_analyzer',
-		config = {
-			on_attach = default_config['on_attach'],
-			settings = rust_config,
-		},
-	},
+		config = rust_config
+  },
 }
 
 for _, server in ipairs(lsp_servers) do
