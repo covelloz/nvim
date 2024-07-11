@@ -12,6 +12,8 @@ conform.setup({
 		css = { 'prettier' },
 		scss = { 'prettier' },
 		vue = { 'prettier' },
+    typescript = { 'prettier' },
+    javascript = { 'prettier' },
 		rust = { 'rustfmt' },
 	},
 	-- formatters = {
