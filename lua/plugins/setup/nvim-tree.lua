@@ -17,6 +17,11 @@ require('nvim-tree').setup({
 	filters = {
 		dotfiles = false,
 	},
+  actions = {
+    open_file = {
+      resize_window = false
+    }
+  }
 })
 
 keymap('n', '<C-n>', '<cmd>NvimTreeToggle<CR>', { desc = 'nvim-tree toggle window' })
