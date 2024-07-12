@@ -22,7 +22,7 @@ require('options.general')
 
 -- auto commands
 require('autocmds.autosave')
-require('autocmds.refresh')
+-- require('autocmds.refresh')
 
 -- keymaps
 require('keymaps.folding')
