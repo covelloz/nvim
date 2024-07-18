@@ -39,6 +39,10 @@ local lsp_servers = {
 		name = 'rust_analyzer',
 		config = rust_config
   },
+  {
+		name = 'kotlin_language_server',
+		config = default_config
+  },
 }
 
 for _, server in ipairs(lsp_servers) do
