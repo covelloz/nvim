@@ -111,6 +111,7 @@ end
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
+vim.env.JAVA_OPTS = '-Xmx16g'
 
 return {
 	on_attach = default_attach,

@@ -4,6 +4,8 @@ local nvim_lsp = require('lspconfig')
 local default_config = require('plugins.setup.configs.lsp.default-conf')
 local rust_config = require('plugins.setup.configs.lsp.rust-conf')
 local tsserver_config = require('plugins.setup.configs.lsp.tsserver-conf')
+-- local kotlin_config = require('plugins.setup.configs.lsp.kotlin-conf')
+
 require('plugins.setup.configs.lsp.eslint-conf')
 
 local lsp_servers = {
