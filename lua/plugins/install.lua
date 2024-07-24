@@ -42,6 +42,8 @@ Plug('kevinhwang91/nvim-ufo')
 Plug('lukas-reineke/indent-blankline.nvim')
 -- whitespace
 Plug('johnfrankmorgan/whitespace.nvim')
+-- scrollbar
+Plug('petertriho/nvim-scrollbar')
 -- status
 Plug('luukvbaal/statuscol.nvim')
 Plug('lewis6991/gitsigns.nvim')
