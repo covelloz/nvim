@@ -32,7 +32,7 @@ end
 function ResizeWindowHorizontalIncrease()
 	local count = vim.v.count
 	if count == 0 then
-		count = 20
+		count = 10
 	end
 	vim.cmd('resize +' .. count)
 end
@@ -40,32 +40,32 @@ end
 function ResizeWindowHorizontalDecrease()
 	local count = vim.v.count
 	if count == 0 then
-		count = 20
+		count = 10
 	end
 	vim.cmd('resize -' .. count)
 end
 
 keymap(
 	'n',
-	'<leader>rr',
+	'<leader>rl',
 	':<C-u>lua ResizeWindowVerticalIncrease()<CR>',
 	{ noremap = true, silent = true, desc = 'quick resize vertical +' }
 )
 keymap(
 	'n',
-	'<leader>rl',
+	'<leader>rh',
 	':<C-u>lua ResizeWindowVerticalDecrease()<CR>',
 	{ noremap = true, silent = true, desc = 'quick resize vertical -' }
 )
 keymap(
 	'n',
-	'<leader>ru',
+	'<leader>rk',
 	':<C-u>lua ResizeWindowHorizontalIncrease()<CR>',
 	{ noremap = true, silent = true, desc = 'quick resize horizontal +' }
 )
 keymap(
 	'n',
-	'<leader>rd',
+	'<leader>rj',
 	':<C-u>lua ResizeWindowHorizontalDecrease()<CR>',
 	{ noremap = true, silent = true, desc = 'quick resize horizontal -' }
 )
