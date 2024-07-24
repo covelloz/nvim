@@ -61,6 +61,7 @@ current: [vim-plug](https://github.com/junegunn/vim-plug)
   - [x] [statuscol](https://github.com/luukvbaal/statuscol.nvim)
   - [x] [lualine](https://github.com/nvim-lualine/lualine.nvim)
   - [x] [toggleterm](https://github.com/akinsho/toggleterm.nvim)
+  - [x] [nvim-scrollbar](https://github.com/petertriho/nvim-scrollbar)
 - [ ] Git integrations
   - [x] [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
   - [ ] [markdown-preview](https://github.com/iamcco/markdown-preview.nvim)
