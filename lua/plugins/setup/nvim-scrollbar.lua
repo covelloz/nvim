@@ -10,6 +10,7 @@ require('scrollbar').setup({
     Cursor = { color = '#ffff00' }
   },
   excluded_filetypes = {
-    'NvimTree'
+    'NvimTree',
+    'TelescopePrompt'
   }
 })
