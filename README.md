@@ -9,10 +9,11 @@ current: [vim-plug](https://github.com/junegunn/vim-plug)
 ## CLI and Build Tool Requirements
 - [sharkdp/fd](https://github.com/sharkdp/fd) (nvim-telescope)
 - [ripgrep](https://github.com/BurntSushi/ripgrep) (nvim-telescope)
+- [fzf](https://github.com/junegunn/fzf) (nvim-bqf)
 - build tools & libs
   - cmake, make, gcc, libstdc++ (nvim-telescope, nvim-treesitter)
-- terminal tools
-  - tar, curl, git (nvim-treesitter)
+- other terminal tools
+  - tar, curl, git
 
 ## Language Server Requirements
 - lua-language-server
@@ -39,6 +40,7 @@ current: [vim-plug](https://github.com/junegunn/vim-plug)
 - [x] File navigation & search
   - [x] [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
   - [x] [nvim-telescope](https://github.com/nvim-telescope/telescope.nvim)
+  - [x] [nvim-bqf](https://github.com/kevinhwang91/nvim-bqf)
   - [x] [which-key](https://github.com/folke/which-key.nvim)
 - [x] Theme
   - [x] [onedark](https://github.com/navarasu/onedark.nvim)
