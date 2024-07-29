@@ -3,11 +3,6 @@ local keymap = vim.keymap.set
 
 local builtin = require('telescope.builtin')
 local actions = require("telescope.actions")
-local action_state = require('telescope.actions.state')
-local finders = require "telescope.finders"
-local pickers = require('telescope.pickers')
-local utils = require('telescope.utils')
-local conf = require('telescope.config')
 
 local ts_utils = require('nvim-treesitter.ts_utils')
 
@@ -36,64 +31,14 @@ vim.keymap.set('n', '<leader>fr', function()
   end
 end, { desc = 'nvim-telescope find references using Treesitter' })
 
-local function entry_maker(entry)
-  local value = entry.value or ""
-  local filename = entry.filename or ""
-  local col = entry.col or 0
-  local lnum = entry.lnum or 0
-  local text = entry.text or ""
-  local index = entry.index or 0
-
-  local display
-  display = utils.transform_path({path_display = { 'truncate' }}, filename)
-  display = utils.transform_devicons(display, display, false)
-
-  return {
-    value = value,
-    filename = filename,
-    display = display,
-    ordinal = value,
-    col = col,
-    lnum = lnum,
-    text = text,
-    index = index,
-  }
-end
-
-local function filter_test(prompt_bufnr)
-  local current_picker = action_state.get_current_picker(prompt_bufnr)
-  local manager = current_picker.manager
-
-  -- filter out results with word
-  local filtered_results = {}
-  for entry in manager:iter() do
-    if not entry.value:find("Test") then
-      print(vim.inspect(entry))
-      table.insert(filtered_results, entry)
-    end
-  end
-
-  pickers.new({}, {
-    prompt_title = "Results (without 'Test')",
-    finder = finders.new_table {
-      results = filtered_results,
-      entry_maker = entry_maker,
-    },
-    sorter = conf.values.generic_sorter({}),
-    previewer = current_picker.previewer,
-  }):find()
-end
-
 require('telescope').setup({
 	defaults = {
     mappings = {
       i = {
         ["<C-s>"] = actions.send_selected_to_qflist + actions.open_qflist,
-        ["<C-F>"] = filter_test,
       },
       n = {
         ["<C-s>"] = actions.send_selected_to_qflist + actions.open_qflist,
-        ["<C-F>"] = filter_test,
       },
     },
 		path_display = { 'truncate' },

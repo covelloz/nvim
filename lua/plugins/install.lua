@@ -17,6 +17,10 @@ Plug(
 		['do'] = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build',
 	}
 )
+-- nvim-bqf
+Plug('junegunn/fzf', { ['do'] = function() vim.fn['fzf#install']() end})
+Plug('junegunn/fzf.vim')
+Plug('kevinhwang91/nvim-bqf')
 -- formatting
 Plug('stevearc/conform.nvim')
 -- lsp::
