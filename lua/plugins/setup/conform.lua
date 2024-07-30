@@ -1,9 +1,9 @@
 local keymap = vim.keymap.set
 local conform = require('conform')
 
-keymap('n', '<leader>fL', conform.format, { noremap = true, silent = true, desc = 'format current buffer' })
-keymap('x', '<leader>fl', conform.format, { noremap = true, silent = true, desc = 'format visual selection' })
-keymap('n', '<leader>fI', ':ConformInfo<CR>', { noremap = true, silent = true, desc = 'formatter get info' })
+keymap('n', '<leader>lb', conform.format, { noremap = true, silent = true, desc = 'format current buffer' })
+keymap('x', '<leader>ll', conform.format, { noremap = true, silent = true, desc = 'format visual selection' })
+keymap('n', '<leader>lI', ':ConformInfo<CR>', { noremap = true, silent = true, desc = 'formatter get info' })
 
 conform.setup({
 	formatters_by_ft = {

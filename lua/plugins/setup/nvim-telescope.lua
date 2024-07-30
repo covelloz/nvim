@@ -11,6 +11,7 @@ keymap('n', '<leader>fg', builtin.live_grep, { desc = 'nvim-telescope grep in fi
 keymap('n', '<leader>ft', builtin.treesitter, { desc = 'nvim-telescope find treesitter references'})
 keymap('n', '<leader>fb', builtin.buffers, { desc = 'nvim-telescope find buffers' })
 keymap('n', '<leader>fh', builtin.help_tags, { desc = 'nvim-telescope find tags' })
+keymap('n', '<leader>fd', builtin.git_status, { desc = 'nvim-telescope git status/diff' })
 
 local function get_current_identifier()
 -- Function to get the current identifier under the cursor using Treesitter
