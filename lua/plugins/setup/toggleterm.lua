@@ -6,5 +6,5 @@ keymap('n', '<leader>sc', ':TermSelect<CR>', { noremap = true, silent = true, de
 require('toggleterm').setup({
 	size = 15,
 	hide_numbers = true,
-	start_in_insert = false,
+	start_in_insert = true,
 })

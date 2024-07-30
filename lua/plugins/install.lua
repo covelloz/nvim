@@ -7,7 +7,7 @@ vim.call('plug#begin')
 Plug('nvim-tree/nvim-web-devicons')
 Plug('nvim-tree/nvim-tree.lua')
 -- buffer tabs
-Plug('akinsho/bufferline.nvim', { ['tag'] = 'v4.6.1' })
+Plug('akinsho/bufferline.nvim', { ['tag'] = 'v4.7.0' })
 -- nvim-telescope
 Plug('nvim-lua/plenary.nvim')
 Plug('nvim-telescope/telescope.nvim', { ['tag'] = '0.1.8' })
@@ -39,7 +39,7 @@ Plug('hrsh7th/nvim-cmp')
 -- onedark theme
 Plug('navarasu/onedark.nvim')
 -- terminal
-Plug('akinsho/toggleterm.nvim', { ['tag'] = 'v2.11.0' })
+Plug('akinsho/toggleterm.nvim', { ['tag'] = 'v2.12.0' })
 -- code folding
 Plug('kevinhwang91/promise-async')
 Plug('kevinhwang91/nvim-ufo')
