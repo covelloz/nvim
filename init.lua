@@ -27,6 +27,9 @@ require('autocmds.autosave')
 -- require('autocmds.refresh')
 
 -- keymaps
+require('keymaps.editing')
 require('keymaps.folding')
-require('keymaps.general')
+require('keymaps.jumplist')
+require('keymaps.quickfixlist')
 require('keymaps.windowing')
+
