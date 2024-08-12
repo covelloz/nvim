@@ -32,15 +32,15 @@ local default_attach = function(_, bufnr)
 	)
 	vim.keymap.set(
 		'n',
-		'<leader>gd',
+		'gd',
 		vim.lsp.buf.definition,
-		{ buffer = bufnr, noremap = true, silent = true, desc = 'LSP definition' }
+		{ buffer = bufnr, noremap = true, silent = true, desc = 'go to LSP definition' }
 	)
 	vim.keymap.set(
 		'n',
-		'<leader>gD',
+		'gD',
 		vim.lsp.buf.declaration,
-		{ buffer = bufnr, noremap = true, silent = true, desc = 'LSP declaration' }
+		{ buffer = bufnr, noremap = true, silent = true, desc = 'go to LSP declaration' }
 	)
 	vim.keymap.set(
 		'n',
@@ -56,9 +56,9 @@ local default_attach = function(_, bufnr)
 	)
 	vim.keymap.set(
 		'n',
-		'<leader>gi',
+		'gi',
 		vim.lsp.buf.implementation,
-		{ buffer = bufnr, noremap = true, silent = true, desc = 'LSP implementation' }
+		{ buffer = bufnr, noremap = true, silent = true, desc = 'go to LSP implementation' }
 	)
 	vim.keymap.set(
 		'n',
@@ -80,21 +80,21 @@ local default_attach = function(_, bufnr)
 	)
 	vim.keymap.set(
 		'n',
-		'<leader>gr',
+		'gr',
 		vim.lsp.buf.references,
-		{ buffer = bufnr, noremap = true, silent = true, desc = 'LSP references' }
+		{ buffer = bufnr, noremap = true, silent = true, desc = 'go to LSP references' }
 	)
 	vim.keymap.set(
 		'n',
-		'<leader>g[',
+		'g[',
 		vim.diagnostic.goto_prev,
-		{ buffer = bufnr, noremap = true, silent = true, desc = 'LSP go to previous' }
+		{ buffer = bufnr, noremap = true, silent = true, desc = 'go to previous LSP diagnostic' }
 	)
 	vim.keymap.set(
 		'n',
-		'<leader>g]',
+		'g]',
 		vim.diagnostic.goto_next,
-		{ buffer = bufnr, noremap = true, silent = true, desc = 'LSP go to next' }
+		{ buffer = bufnr, noremap = true, silent = true, desc = 'go to next LSP diagnostic' }
 	)
 	vim.keymap.set(
 		'n',

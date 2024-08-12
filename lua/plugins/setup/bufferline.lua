@@ -1,21 +1,21 @@
 local keymap = vim.keymap.set
 
-keymap('n', '<Tab>', ':BufferLineCycleNext<CR>', { noremap = true, silent = true, desc = 'go to next buffer' })
-keymap('n', '<S-Tab>', ':BufferLineCyclePrev<CR>', { noremap = true, silent = true, desc = 'go to previous buffer' })
+keymap('n', 'gn', ':BufferLineCycleNext<CR>', { noremap = true, silent = true, desc = 'go to next buffer' })
+keymap('n', 'gp', ':BufferLineCyclePrev<CR>', { noremap = true, silent = true, desc = 'go to previous buffer' })
 keymap(
 	'n',
-	'<leader>bh',
+	'mh',
 	':BufferLineMovePrev<CR>',
 	{ noremap = true, silent = true, desc = 'move current buffer left' }
 )
 keymap(
 	'n',
-	'<leader>bl',
+	'ml',
 	':BufferLineMoveNext<CR>',
 	{ noremap = true, silent = true, desc = 'move current buffer right' }
 )
-keymap('n', '<leader>bp', ':BufferLineTogglePin<CR>', { noremap = true, silent = true, desc = 'toggle buffer pin' })
 
+keymap('n', '<leader>bp', ':BufferLineTogglePin<CR>', { noremap = true, silent = true, desc = 'toggle buffer pin' })
 keymap(
 	'n',
 	'<leader>bq',
