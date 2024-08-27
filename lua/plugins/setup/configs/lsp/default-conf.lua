@@ -26,7 +26,7 @@ local default_attach = function(_, bufnr)
 	-- mappings
 	vim.keymap.set(
 		'n',
-		'<leader>ga',
+		'ga',
 		vim.lsp.buf.code_action,
 		{ buffer = bufnr, noremap = true, silent = true, desc = 'LSP code action' }
 	)
@@ -44,13 +44,13 @@ local default_attach = function(_, bufnr)
 	)
 	vim.keymap.set(
 		'n',
-		'<leader>gk',
+		'gk',
 		vim.lsp.buf.hover,
 		{ buffer = bufnr, noremap = true, silent = true, desc = 'LSP hover' }
 	)
 	vim.keymap.set(
 		'n',
-		'<leader>gK',
+		'gK',
 		vim.diagnostic.open_float,
 		{ buffer = bufnr, noremap = true, silent = true, desc = 'LSP open_float' }
 	)
@@ -62,19 +62,19 @@ local default_attach = function(_, bufnr)
 	)
 	vim.keymap.set(
 		'n',
-		'<leader>gs',
+		'gs',
 		vim.lsp.buf.signature_help,
 		{ buffer = bufnr, noremap = true, silent = true, desc = 'LSP signature_help' }
 	)
 	vim.keymap.set(
 		'n',
-		'<leader>gt',
+		'gt',
 		vim.lsp.buf.type_definition,
 		{ buffer = bufnr, noremap = true, silent = true, desc = 'LSP type_definition' }
 	)
 	vim.keymap.set(
 		'n',
-		'<leader>gR',
+		'gR',
 		vim.lsp.buf.rename,
 		{ buffer = bufnr, noremap = true, silent = true, desc = 'LSP rename' }
 	)
@@ -98,7 +98,7 @@ local default_attach = function(_, bufnr)
 	)
 	vim.keymap.set(
 		'n',
-		'<leader>gq',
+		'gq',
 		vim.diagnostic.setloclist,
 		{ buffer = bufnr, noremap = true, silent = true, desc = 'LSP set loc list' }
 	)
