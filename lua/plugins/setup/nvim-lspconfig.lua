@@ -22,8 +22,8 @@ local lsp_servers = {
 		config = default_config,
 	},
   {
-		name = 'tsserver',
-		config = tsserver_config,
+		name = 'ts_ls',
+		config = default_config,
 	},
 	{
 		name = 'angularls',
