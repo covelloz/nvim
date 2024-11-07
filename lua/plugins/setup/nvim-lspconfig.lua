@@ -42,7 +42,7 @@ local lsp_servers = {
 		config = rust_config
   },
   {
-		name = 'csharp-ls',
+		name = 'csharp_ls',
 		config = default_config,
 	},
 }
