@@ -1,15 +1,15 @@
 local vim = vim
 local keymap = vim.keymap.set
 
-keymap('n', '<C-h>', '<C-w>h', { noremap = true, silent = true, desc = 'switch window left' })
-keymap('n', '<C-l>', '<C-w>l', { noremap = true, silent = true, desc = 'switch window right' })
-keymap('n', '<C-j>', '<C-w>j', { noremap = true, silent = true, desc = 'switch window down' })
-keymap('n', '<C-k>', '<C-w>k', { noremap = true, silent = true, desc = 'switch window up' })
+keymap('n', '<M-h>', '<C-w>h', { noremap = true, silent = true, desc = 'switch window left' })
+keymap('n', '<M-l>', '<C-w>l', { noremap = true, silent = true, desc = 'switch window right' })
+keymap('n', '<M-j>', '<C-w>j', { noremap = true, silent = true, desc = 'switch window down' })
+keymap('n', '<M-k>', '<C-w>k', { noremap = true, silent = true, desc = 'switch window up' })
 
-keymap('n', '<leader>sv', ':vsplit<CR>', { noremap = true, silent = true, desc = 'create vertical split' })
-keymap('n', '<leader>sh', ':split<CR>', { noremap = true, silent = true, desc = 'create horizonal split' })
-keymap('n', '<leader>sV', '<C-w>H', { noremap = true, silent = true, desc = 'switch to vertical split' })
-keymap('n', '<leader>sH', '<C-w>K', { noremap = true, silent = true, desc = 'switch to horizontal split' })
+keymap('n', '<Space>wv', ':vsplit<CR>', { noremap = true, silent = true, desc = 'create vertical split' })
+keymap('n', '<Space>ws', ':split<CR>', { noremap = true, silent = true, desc = 'create horizonal split' })
+keymap('n', '<Space>wV', '<C-w>H', { noremap = true, silent = true, desc = 'switch to vertical split' })
+keymap('n', '<Space>wS', '<C-w>K', { noremap = true, silent = true, desc = 'switch to horizontal split' })
 
 keymap('t', '<ESC>', '<ESC><C-\\><C-n>', { noremap = true, silent = true, desc = 'escape terminal mode' })
 

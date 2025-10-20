@@ -25,7 +25,7 @@ require('nvim-tree').setup({
   }
 })
 
-keymap('n', '<C-n>', '<cmd>NvimTreeToggle<CR>', { desc = 'nvim-tree toggle window' })
+keymap('n', '<Space>e', '<cmd>NvimTreeToggle<CR>', { desc = 'nvim-tree toggle window' })
 keymap('n', '<leader>tf', '<cmd>NvimTreeFindFile<CR>', { desc = 'nvim-tree go to file' })
 keymap('n', '<leader>tc', '<cmd>NvimTreeCollapse<CR>', { desc = 'nvim-tree collapse' })
 -- keymap('n', '<leader>tg', '<cmd>NvimTreeFocus<CR>', { desc = 'nvim-tree toggle window' })

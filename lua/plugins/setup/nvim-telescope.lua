@@ -6,12 +6,12 @@ local actions = require("telescope.actions")
 
 local ts_utils = require('nvim-treesitter.ts_utils')
 
-keymap('n', 'ff', ':lua require"telescope.builtin".find_files({ hidden = true })<CR>', { desc = 'nvim-telescope find files' })
-keymap('n', 'fg', builtin.live_grep, { desc = 'nvim-telescope grep in files' })
-keymap('n', 'ft', builtin.treesitter, { desc = 'nvim-telescope find treesitter references'})
-keymap('n', 'fb', builtin.buffers, { desc = 'nvim-telescope find buffers' })
-keymap('n', 'fh', builtin.help_tags, { desc = 'nvim-telescope find tags' })
-keymap('n', 'fd', builtin.git_status, { desc = 'nvim-telescope git status/diff' })
+keymap('n', '<Space>f', ':lua require"telescope.builtin".find_files({ hidden = true })<CR>', { desc = 'nvim-telescope find files' })
+keymap('n', '<Space>/', builtin.live_grep, { desc = 'nvim-telescope grep in files' })
+keymap('n', '<Space>t', builtin.treesitter, { desc = 'nvim-telescope find treesitter references'})
+keymap('n', '<Space>b', builtin.buffers, { desc = 'nvim-telescope find buffers' })
+keymap('n', '<Space>h', builtin.help_tags, { desc = 'nvim-telescope find tags' })
+keymap('n', '<Space>d', builtin.git_status, { desc = 'nvim-telescope git status/diff' })
 
 local function get_current_identifier()
 -- Function to get the current identifier under the cursor using Treesitter

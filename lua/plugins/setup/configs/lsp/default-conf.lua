@@ -62,19 +62,19 @@ local default_attach = function(_, bufnr)
 	)
 	vim.keymap.set(
 		'n',
-		'gs',
+		'gS',
 		vim.lsp.buf.signature_help,
 		{ buffer = bufnr, noremap = true, silent = true, desc = 'LSP signature_help' }
 	)
 	vim.keymap.set(
 		'n',
-		'gt',
+		'gy',
 		vim.lsp.buf.type_definition,
 		{ buffer = bufnr, noremap = true, silent = true, desc = 'LSP type_definition' }
 	)
 	vim.keymap.set(
 		'n',
-		'gR',
+		'<Space>r',
 		vim.lsp.buf.rename,
 		{ buffer = bufnr, noremap = true, silent = true, desc = 'LSP rename' }
 	)
@@ -86,13 +86,13 @@ local default_attach = function(_, bufnr)
 	)
 	vim.keymap.set(
 		'n',
-		'g[',
+		'[d',
 		vim.diagnostic.goto_prev,
 		{ buffer = bufnr, noremap = true, silent = true, desc = 'go to previous LSP diagnostic' }
 	)
 	vim.keymap.set(
 		'n',
-		'g]',
+		']d',
 		vim.diagnostic.goto_next,
 		{ buffer = bufnr, noremap = true, silent = true, desc = 'go to next LSP diagnostic' }
 	)
